@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'platzi-store';
 
   items = ['nicolas', 'julian', 'pedro'];
-
+  power = 10;
   products: Product[] = [
     {
       id: '1',
