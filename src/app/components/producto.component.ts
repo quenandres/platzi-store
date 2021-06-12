@@ -13,7 +13,8 @@ import { Product } from '../product.model';
 //Decoradores, dan contexto a angular para saber si es un componente o un pipe, etc.
 @Component({
     selector: 'app-product',
-    templateUrl: './product.component.html'
+    templateUrl: './product.component.html',
+    styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit, DoCheck, OnDestroy {
     @Input() product: Product;
