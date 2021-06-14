@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';//Lo importamos por que el header utiliza router link
 
 import { ExponentialPipe } from './pipes/exponential/exponential.pipe';
 import { HighlightDirective } from './directives/highlight/highlight.directive';
