@@ -8,6 +8,8 @@ import { SwiperModule } from 'swiper/angular';
 
 import { HomeRoutingModule } from './home-routing.module';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
     declarations: [
         BannerComponent,
@@ -17,7 +19,8 @@ import { HomeRoutingModule } from './home-routing.module';
         HomeRoutingModule,
         SwiperModule,
         CommonModule,
-        FormsModule
+        FormsModule,
+        SharedModule
     ]
 })
 export class HomeModule {
