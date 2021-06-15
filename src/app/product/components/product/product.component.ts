@@ -8,7 +8,7 @@ import { Component,
     DoCheck, 
     OnDestroy 
 } from '@angular/core';
-import { Product } from '../product.model';
+import { Product } from '../../../product.model';
 
 //Decoradores, dan contexto a angular para saber si es un componente o un pipe, etc.
 @Component({
