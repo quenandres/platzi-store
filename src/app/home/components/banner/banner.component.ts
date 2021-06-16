@@ -20,10 +20,10 @@ export class BannerComponent implements OnInit {
   }
 
   onSwiper(swiper) {
-    console.log(swiper);
+
   }
   onSlideChange() {
-    console.log('slide change');
+
   }
 
 }

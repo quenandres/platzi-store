@@ -30,4 +30,18 @@ export class ProductDetailComponent implements OnInit {
       this.product = product;
     });
   }
+
+  createProduct() {
+    const newProduct: Product = {
+      id: '123',
+      title: 'Nuevo con angular',
+      image: 'assets/images/stickers1.png',
+      price: 64000,
+      description: 'Test desde angular q'
+    };
+    this.productsService.createProduct(newProduct)
+    .subscribe(product => {       
+      console.log(product);
+    });
+  }
 }
