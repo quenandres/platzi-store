@@ -9,6 +9,7 @@ import { Component,
     OnDestroy 
 } from '@angular/core';
 import { Product } from '../../../product.model';
+import { ProductsService } from '../../../core/services/products/products.service';
 
 //Decoradores, dan contexto a angular para saber si es un componente o un pipe, etc.
 @Component({
@@ -22,7 +23,9 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
 
     today = new Date();
 
-    constructor() {
+    constructor(
+        private productsService: ProductsService
+    ) {
         console.log('1. constructor');
     }
 

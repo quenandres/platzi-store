@@ -20,7 +20,12 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {//Subscribe escucha los cambios
       const id = params.id;
-      this.product = this.productsService.getProduct(id);
+      this.productsService.getProduct(id)
+      .subscribe(product => {
+        console.log('product');        
+        console.log(product);        
+        //this.product = product;
+      });
     });
   }
 }
